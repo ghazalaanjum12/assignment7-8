@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dice Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Dice Game</h1>
+    <div id="diceContainer">
+      <img id="dice1Image" src="dice1.png" alt="Dice 1">
+      <img id="dice2Image" src="dice1.png" alt="Dice 2">
+    </div>
+    <button onclick="rollDice()">Roll</button>
+    <div id="scores">
+      <p>Player 1 Score: <span id="player1Score">0</span></p>
+      <p>Player 2 Score: <span id="player2Score">0</span></p>
+    </div>
+    <p id="turn"></p>
+    <p id="winner"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
