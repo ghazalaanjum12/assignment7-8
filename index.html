@@ -1,25 +1,46 @@
+<!--
+    Author: Ghazala Anjum C0905815
+    Version: 1.0
+    Date: 05-04-2024
+    Description: HTML file for displaying dice game.
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Title of the page -->
   <title>Dice Game</title>
+  <!-- Linking the external stylesheet -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <!-- Main container -->
   <div id="container">
+    <!-- Heading of the game -->
     <h1>Dice Game</h1>
+    <!-- Container for dice images -->
     <div id="diceContainer">
+      <!-- Placeholder for the first dice image -->
       <img id="dice1Image" src="dice1.png" alt="Dice 1">
+      <!-- Placeholder for the second dice image -->
       <img id="dice2Image" src="dice1.png" alt="Dice 2">
     </div>
+    <!-- Button to roll the dice -->
     <button onclick="rollDice()">Roll</button>
+    <!-- Scores section -->
     <div id="scores">
+      <!-- Score display for Player 1 -->
       <p>Player 1 Score: <span id="player1Score">0</span></p>
+      <!-- Score display for Player 2 -->
       <p>Player 2 Score: <span id="player2Score">0</span></p>
     </div>
+    <!-- Display whose turn it is -->
     <p id="turn"></p>
+    <!-- Display the winner of the game -->
     <p id="winner"></p>
   </div>
 
+  <!-- Including the external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
