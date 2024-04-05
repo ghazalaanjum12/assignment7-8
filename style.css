@@ -1,50 +1,62 @@
+/*
+    Author: Ghazala Anjum C0905815
+    Version: 1.0
+    Date: 05-04-2024
+*/
+
+/* Styling for the body element */
 body {
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  button {
-    background-color: grey;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    border-radius: 20px; /* Rounded border */
-  }
-  
-  #diceContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  #diceContainer img {
-    width: 100px;
-    height: 100px;
-    margin: 0 10px;
-  }
-  
-  #scores p {
-    margin: 10px;
-  }
-  
-  #winner {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for the main container */
+#container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Set container height to full viewport height */
+}
+
+/* Styling for buttons */
+button {
+    background-color: grey; /* Set background color to grey */
+    color: white; /* Set text color to white */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 20px; /* Add margin from the top */
+    border-radius: 20px; /* Add rounded border */
+}
+
+/* Styling for the dice container */
+#diceContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align items horizontally */
+    align-items: center; /* Center-align items vertically */
+    margin-top: 20px; /* Add margin from the top */
+}
+
+/* Styling for dice images */
+#diceContainer img {
+    width: 100px; /* Set width of dice images */
+    height: 100px; /* Set height of dice images */
+    margin: 0 10px; /* Add margin between dice images */
+}
+
+/* Styling for score paragraphs */
+#scores p {
+    margin: 10px; /* Add margin */
+}
+
+/* Styling for the winner paragraph */
+#winner {
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    margin-top: 20px; /* Add margin from the top */
+}
