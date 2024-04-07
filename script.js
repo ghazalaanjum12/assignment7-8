@@ -28,10 +28,11 @@ function rollDice() {
   document.getElementById("dice2Image").src = diceImages[dice2 - 1];
 
   // Update player scores based on the difference between the rolled numbers
-  if (currentPlayer === "Player 1") {
-    player1Score += Math.abs(dice1 - dice2);
-  } else {
-    player2Score += Math.abs(dice1 - dice2);
+  var difference = Math.abs(dice1 - dice2);
+  if (dice1 > dice2) {
+    player1Score += difference;
+  } else if (dice2 > dice1) {
+    player2Score += difference;
   }
 
   // Update score display on the webpage
@@ -40,16 +41,6 @@ function rollDice() {
 
   // Check if there's a winner after each roll
   checkWinner();
-  
-  // Switch to the next player's turn
-  togglePlayer();
-}
-
-// Function to toggle between players
-function togglePlayer() {
-  currentPlayer = currentPlayer === "Player 1" ? "Player 2" : "Player 1";
-  // Update the displayed turn information on the webpage
-  document.getElementById("turn").innerText = "Next Turn: " + currentPlayer;
 }
 
 // Function to check for a winner
