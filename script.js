@@ -6,7 +6,7 @@
 // Initialize variables
 var player1Score = 0; // Score of Player 1
 var player2Score = 0; // Score of Player 2
-var targetScore = 30; // Target score to win the game
+var targetScore = 50; // Target score to win the game
 var diceImages = [ // Array containing paths to dice images
   "dice1.png", // Die 1
   "dice2.png", // Die 2
@@ -54,3 +54,5 @@ function checkWinner() {
     document.getElementById("winner").innerText = "Player 2 Wins!";
   }
 }
+
+document.getElementById("rollButton").addEventListener("click", rollDice);
